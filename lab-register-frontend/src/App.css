@@ -1,0 +1,274 @@
+body {
+  background-color: #f4f6f9;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+  color: #1a3c6e;
+  margin-bottom: 4px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.sample-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.sample-table th,
+.sample-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.sample-table th {
+  background-color: #1a3c6e;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.sample-table tr:nth-child(even) {
+  background-color: #f9fafc;
+}
+
+.sample-table tr:hover {
+  background-color: #eef4ff;
+  transition: background-color 0.15s ease;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-processed {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-issued {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1a3c6e;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  max-width: 300px;
+  margin-bottom: 0;
+}
+
+.status-select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sample-table {
+  box-shadow: none; /* moved shadow to wrapper, avoid doubling it */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+  .app {
+    padding: 15px 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .search-input,
+  .status-select {
+    max-width: 100%;
+  }
+
+  .sample-table th,
+  .sample-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .sample-form {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+
+  .edit-btn {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+.sample-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.form-row {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #444;
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sample-form button {
+  background-color: #1a3c6e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.sample-form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.form-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  background-color: #1a3c6e;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #14315a;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background-color: #eee !important;
+  color: #333 !important;
+}
+.empty-state {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sample-form {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+
+  .edit-btn {
+    width: 100%;
+    padding: 8px;
+  }
