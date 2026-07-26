@@ -1,6 +1,6 @@
 # Laboratory Sample Collection and Report Register
 
-A digital register that tracks lab samples from collection through processing to report issue, so the lab can instantly see which samples are pending (and for how long), and answer a patient's report status immediately — replacing a paper register. (Demo is in the last line plz refer it)
+A digital register that tracks lab samples from collection through processing to report issue, so the lab can instantly see which samples are pending (and for how long), and answer a patient's report status immediately — replacing a paper register. ##(Demo is in the last line plz refer it)
 
 ## Problem (in two lines)
 
